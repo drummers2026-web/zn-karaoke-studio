@@ -24,3 +24,18 @@ Audio separation can leave some vocal sounds or remove parts of instruments. Res
 ## Logo asset
 
 Keep zn-music-hub-logo.webp beside index.html when hosting the site; the header loads it directly.
+
+
+## Install icon and name
+
+The install name is ZN Karaoke Studio. Keep icon-full-192.png and icon-full-512.png beside index.html and manifest.webmanifest so browsers can use the complete ZN Music Hub logo for the installed app icon.
+
+
+## iPhone and iPad installation
+
+Open the site in Safari, tap Share, choose Add to Home Screen, enable Open as Web App if shown, and tap Add. If the option is hidden, scroll the Share menu or use Edit Actions to add it.
+
+
+## Suggestions and feedback
+
+The suggestion form asks for the visitor name, email, and message, then opens their email app addressed to drummers2026@gmail.com. The visitor reviews and sends the email from their own app.

@@ -1,10 +1,23 @@
 {
   "name": "ZN Karaoke Studio",
-  "short_name": "ZN Karaoke",
+  "short_name": "ZN Karaoke Studio",
   "description": "Your pocket-sized karaoke studio.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#090908",
   "theme_color": "#090908",
-  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+  "icons": [
+    {
+      "src": "icon-full-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-full-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
