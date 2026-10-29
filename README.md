@@ -1,6 +1,6 @@
 # ZN Karaoke Studio
 
-A browser based karaoke player for iPhone, iPad, Android, and desktop. Add audio files from your device, create instrumental karaoke versions in the browser, adjust playback, sing along, and export the adjusted track.
+A browser based karaoke player for iPhone, iPad, Android, and desktop. The header features the Zubair Naina Music Hub logo and a warm black-and-gold theme. Add audio files from your device, create instrumental karaoke versions in the browser, adjust playback, sing along, and export the adjusted track.
 
 ## Use
 
@@ -20,3 +20,7 @@ The app is a static site. It can be hosted on GitHub Pages or another static web
 ## Limitations
 
 Audio separation can leave some vocal sounds or remove parts of instruments. Results depend on the source mix and device performance. Playback tempo and pitch use the browser's playback-rate control. Performance recording mixes the microphone with the adjusted backing track and downloads a recording. Plain-text lyrics are not automatically timed; use an .lrc file with timestamps for synchronized highlighting.
+
+## Logo asset
+
+Keep zn-music-hub-logo.webp beside index.html when hosting the site; the header loads it directly.
