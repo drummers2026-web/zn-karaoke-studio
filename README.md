@@ -4,14 +4,17 @@ A browser based karaoke player for iPhone, iPad, Android, and desktop. The heade
 
 ## Use
 
+Use the **Player** page to play, adjust, loop, and record. Open **Karaoke Creator** to make an instrumental. The two views share the same player session, so switching pages keeps your current track loaded.
+
 1. Open `index.html` in a current browser.
 2. Press **Try a demo** to load a short generated instrumental, or add your own audio file.
-3. Press **Create karaoke**. On first use, the browser downloads the free karaoke separation model (about 30 MB). Processing time depends on your device.
-4. Use tempo, pitch, backing volume, bass, treble, reverb, echo, and pan controls while singing.
-5. Press the red record control to capture your voice together with the adjusted backing track; stop to download the performance.
-6. Load lyrics by pasting text or choosing a .txt file. Timed .lrc files follow playback automatically; plain text can be read and scrolled while singing.
+3. Open **Karaoke Creator**, then choose a song. The app estimates its approximate Western major/minor key on your device and shows the result; you can set the Player key manually. This estimate is only a guide and does not identify an Indian raga.
+4. Press **Create karaoke**. On first use, the browser downloads the free karaoke separation model (about 30 MB). Processing time depends on your device. Phones may take several minutes; keep the page open and the screen awake until it finishes.
+5. Choose a target key to transpose the song; otherwise use the pitch slider. Use tempo, backing volume, bass, treble, reverb, echo, and pan controls while singing.
+6. Set loop points A and B to repeat a section for practice. Press the red record control for a three-second count-in, then record your voice with the adjusted backing; stop to review your voice and backing in the built-in player, then download the take if you like it.
+7. Load lyrics by pasting text or choosing a .txt file. Timed .lrc files follow playback automatically; plain text can be read and scrolled while singing.
 
-Audio processing runs in your browser. Your song is not uploaded to this app's server. A connection is needed to download the separation model on first use.
+Track-specific adjustment settings are saved in this browser on this device. Audio processing and the approximate key estimate run in your browser. Your song is not uploaded to this app's server. A connection is needed to download the separation model on first use. Key estimates can be inaccurate for dense mixes, songs that change key, or Indian classical music. The app does not detect ragas; raga identification requires more than matching a Western major/minor scale.
 
 ## Hosting
 
