@@ -2,6 +2,10 @@
 
 A browser based karaoke player for iPhone, iPad, Android, and desktop. The header features the Zubair Naina Music Hub logo and a warm black-and-gold theme. Add audio files from your device, create instrumental karaoke versions in the browser, adjust playback, sing along, and export the adjusted track.
 
+## Product guide
+
+Open product-guide.html for the illustrated guide. product-guide.png and product-guide-page-2.png cover the studio basics; product-guide-page-3.png explains the Player; product-guide-page-4.png is a step-by-step Karaoke Creator guide with a clear recommendation to create tracks on a PC or computer.
+
 ## Use
 
 Use the **Player** page to play, adjust, loop, and record. Open **Karaoke Creator** to make an instrumental. The two views share the same player session, so switching pages keeps your current track loaded.
