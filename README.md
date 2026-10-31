@@ -26,12 +26,12 @@ Audio separation can leave some vocal sounds or remove parts of instruments. Res
 
 ## Logo asset
 
-Keep zn-music-hub-logo.webp beside index.html when hosting the site; the header loads it directly.
+Keep zn-karaoke-studio-logo.png beside index.html; the header uses this full artwork.
 
 
 ## Install icon and name
 
-The install name is ZN Karaoke Studio. Keep icon-full-192.png and icon-full-512.png beside index.html and manifest.webmanifest so browsers can use the complete ZN Music Hub logo for the installed app icon.
+The install name is ZN Karaoke Studio. Keep icon-192.png and icon-512.png beside index.html and manifest.webmanifest. These square icons focus on the gold Z mascot so the app stays recognizable on a phone. The full artwork is available as icon-full-192.png and icon-full-512.png.
 
 
 ## iPhone and iPad installation
