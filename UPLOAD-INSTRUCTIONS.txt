@@ -1,1 +1,1 @@
-Extract all files into the root of your existing GitHub repository. Replace index.html when prompted. Add the six music-converter and lyrics-stage files. The logo is included for convenience; keep it beside the HTML files. Then commit the changes and wait for GitHub Pages to redeploy.
+Extract these three files into the root of your existing GitHub repository and replace the matching converter files. Keep index.html, Lyrics Stage, the player, and the existing logo unchanged. Do not upload the ZIP itself as the website; extract it first, then upload/commit the three files.

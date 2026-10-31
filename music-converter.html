@@ -28,11 +28,13 @@
   <div class="znmc-card-head"><div><p class="znmc-kicker">STEP 1</p><h2 id="source-title">Choose authorized media</h2></div><span class="znmc-badge">Processed in your browser</span></div>
   <label class="znmc-field-label" for="mc-file">Choose an audio or video file</label>
   <input id="mc-file" class="znmc-file" type="file" accept="audio/*,video/*,.mp3,.m4a,.wav,.aac,.ogg,.flac,.mp4,.mov,.webm,.mkv,.avi">
-  <div class="znmc-divider"><span>OR</span></div>
-  <label class="znmc-field-label" for="mc-url">Direct media file link</label>
-  <div class="znmc-link-row"><input id="mc-url" type="url" inputmode="url" placeholder="https://example.com/your-authorized-video.mp4" autocomplete="url"><button id="mc-load-url" class="znmc-button znmc-button-outline" type="button">Use link</button></div>
-  <p class="znmc-help">Use a direct downloadable media-file URL for media you are allowed to use. The host must allow browser access (CORS). Video platform pages and DRM-protected streams are not supported.</p>
   <p id="mc-selected" class="znmc-selected" role="status" aria-live="polite">No media selected.</p>
+</section>
+<section class="znmc-card znmc-external" aria-labelledby="cnvmp3-title">
+  <div class="znmc-card-head"><div><p class="znmc-kicker">OPTIONAL EXTERNAL SERVICE</p><h2 id="cnvmp3-title">EXTERNAL YOUTUBE DOWNLOADER</h2></div><span class="znmc-badge">Opens separately</span></div>
+  <p>Want to convert a YouTube link? Use our recommended external converter.</p>
+  <button id="mc-open-cnvmp3" class="znmc-button" type="button">OPEN CNVMP3 ↗</button>
+  <p class="znmc-help">CnvMP3 is a separate external service. Its website and policies are managed by its provider.</p>
 </section>
 <section class="znmc-card" aria-labelledby="convert-title">
   <div class="znmc-card-head"><div><p class="znmc-kicker">STEP 2</p><h2 id="convert-title">Convert to MP3</h2></div><span class="znmc-badge">Actual FFmpeg processing</span></div>
