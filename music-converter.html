@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090908">
+<meta name="description" content="Convert authorized audio and video files to MP3 in your browser.">
+<title>ZN MP3 Downloader &amp; Converter</title>
+<link rel="stylesheet" href="music-converter.css">
+<script defer src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js" crossorigin="anonymous"></script>
+<script defer src="music-converter.js"></script>
+</head>
+<body>
+<div class="znmc-shell">
+<header class="znmc-header">
+  <a class="znmc-brand" href="index.html" aria-label="Return to ZN Karaoke Studio"><img src="zn-karaoke-studio-logo.png" alt="ZN Music Hub logo"><span>ZN MUSIC HUB <small>TOOLS</small></span></a>
+  <nav class="znmc-page-nav" aria-label="ZN tools"><a href="music-converter.html" aria-current="page">MP3 Downloader</a><a href="lyrics-stage.html">Sing Along</a></nav>
+  <a class="znmc-back" href="index.html">← ZN Karaoke Studio</a>
+</header>
+<main>
+<section class="znmc-hero">
+  <p class="znmc-kicker">A ZN MUSIC HUB TOOL</p>
+  <h1>ZN MP3 Downloader <span>&amp; Converter</span></h1>
+  <p>Convert audio or video you own or have permission to use into an MP3 file.</p>
+  <div class="znmc-note"><strong>Best on a PC or laptop.</strong> Large media files need processing power and may be slow on phones.</div>
+</section>
+<section class="znmc-card" aria-labelledby="source-title">
+  <div class="znmc-card-head"><div><p class="znmc-kicker">STEP 1</p><h2 id="source-title">Choose authorized media</h2></div><span class="znmc-badge">Processed in your browser</span></div>
+  <label class="znmc-field-label" for="mc-file">Choose an audio or video file</label>
+  <input id="mc-file" class="znmc-file" type="file" accept="audio/*,video/*,.mp3,.m4a,.wav,.aac,.ogg,.flac,.mp4,.mov,.webm,.mkv,.avi">
+  <div class="znmc-divider"><span>OR</span></div>
+  <label class="znmc-field-label" for="mc-url">Direct media file link</label>
+  <div class="znmc-link-row"><input id="mc-url" type="url" inputmode="url" placeholder="https://example.com/your-authorized-video.mp4" autocomplete="url"><button id="mc-load-url" class="znmc-button znmc-button-outline" type="button">Use link</button></div>
+  <p class="znmc-help">Use a direct downloadable media-file URL, with permission to use it. The host must allow browser access (CORS). Video platform pages and DRM-protected streams are not supported.</p>
+  <label class="znmc-consent"><input id="mc-authorized" type="checkbox"><span>I own this media or have permission to download and convert it.</span></label>
+  <p id="mc-selected" class="znmc-selected" role="status" aria-live="polite">No media selected.</p>
+</section>
+<section class="znmc-card" aria-labelledby="convert-title">
+  <div class="znmc-card-head"><div><p class="znmc-kicker">STEP 2</p><h2 id="convert-title">Convert to MP3</h2></div><span class="znmc-badge">Actual FFmpeg processing</span></div>
+  <div class="znmc-convert-row"><label class="znmc-quality"><span>MP3 quality</span><select id="mc-bitrate"><option value="128">128 kbps · smaller file</option><option value="192" selected>192 kbps · balanced</option><option value="256">256 kbps · high quality</option><option value="320">320 kbps · largest file</option></select></label><button id="mc-convert" class="znmc-button" type="button" disabled>Convert to MP3</button></div>
+  <div class="znmc-progress-wrap"><div class="znmc-progress-caption"><span id="mc-convert-status" role="status" aria-live="polite">Choose a file to begin.</span><span id="mc-progress-label">0%</span></div><progress id="mc-progress" max="100" value="0">0%</progress></div>
+  <a id="mc-mp3-download" class="znmc-download" hidden>Download MP3</a>
+</section>
+<section class="znmc-card znmc-privacy">
+  <h2>What happens to your media?</h2>
+  <p>Audio conversion runs in your browser using FFmpeg WebAssembly. Your media is not uploaded to this app’s server. The finished MP3 downloads to this device.</p>
+</section>
+</main>
+<footer class="znmc-footer">Created by Firdous Kochi · © 2026 ZN Music Hub</footer>
+</div>
+</body>
+</html>

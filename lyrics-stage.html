@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090908">
+<meta name="description" content="Import karaoke tracks, find lyric pages, and follow large editable lyrics on a finger-scroll singing stage.">
+<title>ZN Lyrics Stage</title>
+<link rel="stylesheet" href="lyrics-stage.css">
+<script defer src="lyrics-stage.js"></script>
+</head>
+<body>
+<div class="zls-shell">
+  <header class="zls-header">
+    <a class="zls-brand" href="index.html" aria-label="Back to ZN Karaoke Studio"><img src="zn-karaoke-studio-logo.png" alt="ZN Music Hub"><span>ZN MUSIC HUB<small>LYRICS STAGE</small></span></a>
+    <nav class="zls-page-nav" aria-label="ZN tools"><a href="music-converter.html">MP3 Downloader</a><a href="lyrics-stage.html" aria-current="page">Sing Along</a></nav>
+    <a class="zls-back" href="index.html">← Studio</a>
+  </header>
+  <main>
+    <section class="zls-hero">
+      <p class="zls-kicker">YOUR SONG. YOUR MOMENT.</p>
+      <h1>Sing along.<br><span>Make it your stage.</span></h1>
+      <p>Import an adjusted karaoke track, find the lyrics, and follow them at your own pace.</p>
+    </section>
+
+    <section class="zls-grid">
+      <aside class="zls-side">
+        <section class="zls-card" aria-labelledby="library-title">
+          <div class="zls-heading-row"><div><p class="zls-kicker">ON THIS DEVICE</p><h2 id="library-title">My Karaoke</h2></div><span id="library-count" class="zls-count">0 tracks</span></div>
+          <label class="zls-import" for="track-import"><span class="zls-import-icon">＋</span><span><b>Import from device</b><small>Choose an audio file from Downloads or Files</small></span></label>
+          <input id="track-import" type="file" accept="audio/*,.mp3,.wav,.m4a,.aac,.ogg,.flac,.webm" hidden>
+          <p id="library-status" class="zls-status" role="status" aria-live="polite">Your imported tracks stay in this browser on this device.</p>
+          <ul id="track-list" class="zls-track-list" aria-label="Imported karaoke tracks"></ul>
+        </section>
+
+        <section class="zls-card" aria-labelledby="search-title">
+          <p class="zls-kicker">FIND THE WORDS</p><h2 id="search-title">Search for lyrics</h2>
+          <label class="zls-label" for="song-title">Song title</label><input id="song-title" class="zls-input" type="search" placeholder="e.g. Chingari Koi Bhadke">
+          <label class="zls-label" for="song-artist">Artist (optional)</label><input id="song-artist" class="zls-input" type="text" placeholder="Singer or film">
+          <button id="search-lyrics" class="zls-button zls-button-outline" type="button">Search lyric pages ↗</button>
+          <p class="zls-hint">Opens lyric-focused web results in another tab—not an MP3 or video player. Copy the lyrics you want to use, then paste them into the editor.</p>
+        </section>
+
+        <section class="zls-card zls-edit-card" aria-labelledby="edit-title">
+          <div class="zls-heading-row"><div><p class="zls-kicker">MAKE IT YOURS</p><h2 id="edit-title">Lyrics editor</h2></div></div>
+          <label class="zls-label" for="lyrics-input">Paste or edit lyrics · one line at a time</label>
+          <textarea id="lyrics-input" rows="8" placeholder="Paste your lyrics here…&#10;Put each line on a new row."></textarea>
+          <button id="save-lyrics" class="zls-button" type="button" disabled>Save lyrics to this track</button>
+          <p id="lyrics-status" class="zls-status" role="status" aria-live="polite">Import and select a track to get started.</p>
+        </section>
+      </aside>
+
+      <section class="zls-card zls-stage-card" aria-labelledby="stage-title">
+        <div class="zls-heading-row zls-stage-heading"><div><p class="zls-kicker">SING-ALONG STAGE</p><h2 id="stage-title">Your lyrics, easy to follow</h2></div><button id="fullscreen" class="zls-icon-button" type="button" aria-label="Enter full screen" title="Full screen">⛶</button></div>
+        <div class="zls-now-playing"><span class="zls-note-icon">♫</span><div><small>NOW PLAYING</small><strong id="now-playing-name">Import a track to begin</strong></div></div>
+        <audio id="audio-player" controls preload="metadata"></audio>
+        <div class="zls-stage-tools">
+          <button id="font-down" class="zls-icon-button" type="button" aria-label="Make lyrics smaller">A−</button>
+          <span id="font-size-label" class="zls-font-label">Large text</span>
+          <button id="font-up" class="zls-icon-button" type="button" aria-label="Make lyrics larger">A+</button>
+          <button id="stage-top" class="zls-icon-button zls-jump" type="button" title="Back to first line">↑ Top</button>
+          <button id="stage-bottom" class="zls-icon-button zls-jump" type="button" title="Jump to last line">↓ End</button>
+        </div>
+        <div id="lyrics-stage" class="zls-stage" tabindex="0" aria-label="Scrollable song lyrics">
+          <div id="lyrics-stage-empty" class="zls-stage-empty"><span>♫</span><p>Import a track and add lyrics.<br>Your words will appear here in large type.</p></div>
+          <div id="lyrics-stage-lines" class="zls-stage-lines" aria-live="polite"></div>
+        </div>
+        <div class="zls-video-row"><div><strong>Take the words with you</strong><small>Record the backing track and your finger-scrolled lyrics as a video.</small></div><button id="record-video" class="zls-button zls-record" type="button" disabled>● Record video</button></div>
+        <p id="record-status" class="zls-status" role="status" aria-live="polite">Video recording needs a browser that supports media capture. Best on a PC or tablet.</p>
+      </section>
+    </section>
+  </main>
+  <footer class="zls-footer">Created by Firdous Kochi · © 2026 ZN Music Hub</footer>
+</div>
+</body>
+</html>
